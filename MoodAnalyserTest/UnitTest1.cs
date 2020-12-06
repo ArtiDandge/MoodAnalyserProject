@@ -35,5 +35,11 @@ namespace MoodAnalyserTest
             var result = moodAnalyser.analyseMood("I am in Any Mood");
             Assert.AreEqual("HAPPY", result);
         }
+        [TestMethod]
+        public void givenSadMessage_WhenToConstructo_ShouldReturnSAD()
+        {
+            var result = moodAnalyser.analyseMood1();
+            Assert.AreEqual("SAD", result);
+        }
     }
 }
