@@ -18,21 +18,28 @@ namespace MoodAnalyserProject
         }
         public string AnalyseMood()
         {
-            if (this.message.Contains("Sad"))
+            try
             {
-                return "SAD";
+                if (this.message.Contains("Sad"))
+                {
+                    return "SAD";
+                }
+                else if (this.message.Contains("Happy"))
+                {
+                    return "HAPPY";
+                }
+                else if (this.message.Contains("Any"))
+                {
+                    return "HAPPY";
+                }
+                else
+                {
+                    return "Happy";
+                }
             }
-            else if (this.message.Contains("Happy"))
+            catch
             {
-                return "HAPPY";
-            }
-            else if (this.message.Contains("Any"))
-            {
-                return "HAPPY";
-            }
-            else
-            {
-                return "HAPPY";
+                return "Happy";
             }
         }
                    

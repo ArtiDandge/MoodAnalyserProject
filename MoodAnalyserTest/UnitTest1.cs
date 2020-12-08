@@ -50,6 +50,23 @@ namespace MoodAnalyserTest
             //Assert
             Assert.AreEqual(Expected, result);
         }
-               
+
+        /// <summary>
+        /// This Test case ensure AnalyseMood() method will return when HAPPY when Any mood message is given
+        /// </summary>
+        [TestMethod]
+        [DataRow("null")]
+        public void GivenNULLMessage_WhenANULL_ShouldReturnHAPPY(string message)
+        {
+            //Arrange
+            string Expected = "Happy";
+            MoodAnalyser moodAnalyser = new MoodAnalyser(message);
+            //Act
+            string result = moodAnalyser.AnalyseMood();
+            //Assert
+            Assert.AreEqual(Expected, result);
+        }
+
+
     }
 }
