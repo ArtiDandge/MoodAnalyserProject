@@ -5,7 +5,7 @@ namespace MoodAnalyserProject
     public class MoodAnalyser
     {
         public string message;
-        public MoodAnalyser():this("I am in Sad Mood")
+        public MoodAnalyser():this("I am in Happy Mood")
         {
             
         }
@@ -17,19 +17,21 @@ namespace MoodAnalyserProject
         {
             Console.WriteLine("Welcome to Mood Analyser Project !");
             MoodAnalyser mood = new MoodAnalyser("I am in Sad Mood");
+            MoodAnalyser mood1 = new MoodAnalyser("I am in Happy Mood");
             Console.WriteLine(mood.analyseMood1());
+            Console.WriteLine(mood1.analyseMood1());
         }
-        public string analyseMood(string message)
+        public string analyseMood(string moood)
         {
-            if (message.Equals("Happy"))
+            if (moood.Equals("Happy"))
             {
-                return message + " mood";
+                return moood + " mood";
             }
-            else if (message.Equals("Sad"))
+            else if (moood.Equals("Sad"))
             {
-                return message + " mood";
+                return moood + " mood";
             }
-            else if (message.Equals("I am in Sad Mood"))
+            else if (moood.Equals("I am in Sad Mood"))
             {
                 return "SAD";
             }
@@ -46,11 +48,14 @@ namespace MoodAnalyserProject
             {
                 return "SAD";
             }
-            else
+            else if(message.Equals("I am in Happy Mood"))
             {
                 return "HAPPY";
             }
-
+            else
+            {
+                return "Happy";
+            }
         }
     }
 }
