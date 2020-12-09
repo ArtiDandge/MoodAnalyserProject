@@ -47,6 +47,7 @@ namespace MoodAnalyserProject
             {
                 throw new MoodAnalyserException(MoodAnalyserException.ExceptionType.NULL_MESSAGE, "Message should not be null");
             }
+            
         }
                    
         
