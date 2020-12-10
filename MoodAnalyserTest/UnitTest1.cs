@@ -99,6 +99,9 @@ namespace MoodAnalyserTest
             expected.Equals(obj);
         }
 
+        /// <summary>
+        /// UC5-TC5.1 Proper message are provided to parameterized constructor and expected to return the MoodAnalyser Object
+        /// </summary>
         [TestMethod]
         public void GivenMoodAnalyseClassName_ShouldReturnMoodAnalyserObject_UsingParameterizdConstructor()
         {
@@ -107,5 +110,15 @@ namespace MoodAnalyserTest
             expected.Equals(obj);
         }
 
+        /// <summary>
+        /// UC6-TC6-1 Given Happy Should Return Happy.
+        /// </summary>
+        [TestMethod]
+        public void GiveHappyMoodShouldReturnHappy()
+        {
+            string expected = "HAPPY";
+            string mood = MoodAnalyserFactory.InvokeAnalyseMood("Happy", "AnalyMood");
+            Assert.AreEqual(expected, mood);
+        }
     }
 }
