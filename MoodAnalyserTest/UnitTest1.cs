@@ -117,7 +117,7 @@ namespace MoodAnalyserTest
         public void GiveHappyMoodShouldReturnHappy()
         {
             string expected = "HAPPY";
-            string mood = MoodAnalyserFactory.InvokeAnalyseMood("Happy", "AnalyMood");
+            string mood = MoodAnalyserFactory.InvokeAnalyseMood("Happy", "AnalyseMood");
             Assert.AreEqual(expected, mood);
         }
     }
