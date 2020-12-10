@@ -117,8 +117,18 @@ namespace MoodAnalyserTest
         public void GiveHappyMoodShouldReturnHappy()
         {
             string expected = "HAPPY";
-            string mood = MoodAnalyserFactory.InvokeAnalyseMood("Happy", "AnalyMood");
+            string mood = MoodAnalyserFactory.InvokeAnalyseMood("Happy", "AnalyseMood");
             Assert.AreEqual(expected, mood);
+        }
+
+        /// <summary>
+        /// UC7-TC7.1 Given Happy Should Return Happy
+        /// </summary>
+        [TestMethod]
+        public void Given_HAPPYMessag_WithReflector_should_ReturnHAPPY() 
+        {
+            string result = MoodAnalyserFactory.SetField("HAPPY", "message");
+            Assert.AreEqual("HAPPY", result);
         }
     }
 }
