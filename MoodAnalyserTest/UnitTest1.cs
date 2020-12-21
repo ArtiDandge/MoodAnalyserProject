@@ -7,7 +7,7 @@ namespace MoodAnalyserTest
     {
        
        /// <summary>
-       /// This Test case ensure AnalyseMood() method will return when SAD when message contains Sad
+       /// This Test case ensure AnalyseMood() method will return when SAD when message contains Sad using Constructor
        /// </summary>
         [TestMethod]
         public void GivenSadMessage_WhenSad_ShouldReturnSAD()
@@ -22,9 +22,9 @@ namespace MoodAnalyserTest
         }
 
         /// <summary>
-        /// This Test case ensure AnalyseMood() method will return when HAPPY when message contains Happy
+        /// This Test case ensure AnalyseMood() method will return when HAPPY when message contains Happy using Constructor
         /// </summary>
-        [TestMethod]
+        [TestMethod]       
         public void GivenHappyMessage_WhenAnyMood_ShouldReturnHAPPY()
         {
             //Arrange
@@ -37,7 +37,7 @@ namespace MoodAnalyserTest
         }
 
         /// <summary>
-        /// This Test case ensure AnalyseMood() method will return when HAPPY when Any mood message is given
+        /// This Test case ensure AnalyseMood() method will return when HAPPY when Any mood message is given using Constructor
         /// </summary>
         [TestMethod]
         public void GivenAnyMessage_WhenAnyMood_ShouldReturnHAPPY()

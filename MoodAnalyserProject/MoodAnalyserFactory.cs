@@ -34,9 +34,9 @@ namespace MoodAnalyserProject
         /// <summary>
         /// CreatMoodAnalser method to creat object of MoodAnalyser
         /// </summary>
-        /// <param name="className"></param>
-        /// <param name="constructorName"></param>
-        /// <param name="message"></param>
+        /// <param name="className">class Name</param>
+        /// <param name="constructorName">costructor name</param>
+        /// <param name="message">message</param>
         /// <returns></returns>
         public static object CreateMoodAnalyserUsingParameterizedConstructor(string className, string constructorName, string message)
         {
@@ -60,6 +60,12 @@ namespace MoodAnalyserProject
             }
         }
 
+        /// <summary>
+        /// Invoke Method using Reflection
+        /// </summary>
+        /// <param name="message">message</param>
+        /// <param name="methodName">Method Name</param>
+        /// <returns></returns>
         public static string InvokeAnalyseMood(string message, string methodName)
         {
             try
@@ -78,8 +84,8 @@ namespace MoodAnalyserProject
         /// <summary>
         /// Function to set the Field Dynamically using Reflection
         /// </summary>
-        /// <param name="message"></param>
-        /// <param name="fieldName"></param>
+        /// <param name="message">message</param>
+        /// <param name="fieldName">field name</param>
         /// <returns></returns>
         public static string SetField(string message, string fieldName)
         {

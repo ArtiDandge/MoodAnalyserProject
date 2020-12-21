@@ -1,5 +1,4 @@
-﻿
-using System;
+﻿using System;
 
 namespace MoodAnalyserProject
 {
@@ -10,14 +9,17 @@ namespace MoodAnalyserProject
         {
 
         }
+
         public MoodAnalyser(string message)
         {
             this.message = message;
         }
+
         static void Main(string[] args)
         {
             
         }
+
         public string AnalyseMood()
         {
             try
@@ -47,9 +49,6 @@ namespace MoodAnalyserProject
             {
                 throw new MoodAnalyserException(MoodAnalyserException.ExceptionType.NULL_MESSAGE, "Message should not be null");
             }
-            
-        }
-                   
-        
+        }                  
     }
 }
